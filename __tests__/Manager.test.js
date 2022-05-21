@@ -1,6 +1,6 @@
 const Manager = require('../lib/Manager');
 
-test('should allow you to enter a name, id and email', () => {
+test('should allow you to enter a name, id, email and office number', () => {
     const mgr = new Manager('Macy', 55, 'macykcool@gmail.com', 99);
 
     expect(mgr.name).toBe('Macy');
@@ -13,3 +13,4 @@ test('should allow you to enter a name, id and email', () => {
     expect(mgr.getRole()).toBe('Manager');
 
 });
+

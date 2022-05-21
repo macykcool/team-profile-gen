@@ -1,14 +1,16 @@
-const Employee = require('../lib/Employee');
+const Intern = require('../lib/Intern');
 
-test('should allow you to enter a name, id and email', () => {
-    const empo = new Employee('Macy', 55, 'macykcool@gmail.com');
+test('should allow you to enter a name, id, email and school', () => {
+    const ntr = new Intern('Macy', 55, 'macykcool@gmail.com', 'UCD');
 
-    expect(empo.name).toBe('Macy');
-    expect(empo.id).toBe(55);
-    expect(empo.email).toBe('macykcool@gmail.com');
-    expect(empo.getName()).toBe('Macy');
-    expect(empo.getID()).toBe(55);
-    expect(empo.getEmail()).toBe('macykcool@gmail.com');
-    expect(empo.getRole()).toBe('Employee');
+    expect(ntr.name).toBe('Macy');
+    expect(ntr.id).toBe(55);
+    expect(ntr.email).toBe('macykcool@gmail.com');
+    expect(ntr.school).toBe('UCD');
+    expect(ntr.getName()).toBe('Macy');
+    expect(ntr.getId()).toBe(55);
+    expect(ntr.getEmail()).toBe('macykcool@gmail.com');
+    expect(ntr.getSchool()).toBe('UCD');
+    expect(ntr.getRole()).toBe('Intern');
 
 });
