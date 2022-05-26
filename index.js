@@ -1,80 +1,71 @@
 const inquirer = require("inquirer");
-const generateHTML = require("./src/generateHTML.js");
+const generateHTML = require("./src/generateHTML");
+const template = require("./src/template");
 
-const promptTeam = [
-  //manager
-  {
-    type: "input",
-    name: "name",
-    message: "What is your name?",
-    validate: (nameInput) => {
-      if (nameInput) {
-        return true;
-      } else {
-        console.log("Please enter your name!");
-        return false;
-      }
-    },
-  },
-  {
-    type: "input",
-    name: "id",
-    message: "Enter your employee ID",
-    validate: (nameInput) => {
-      if (nameInput) {
-        return true;
-      } else {
-        console.log("Please enter your employee ID!");
-        return false;
-      }
-    },
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "Enter your employee email",
-    validate: (nameInput) => {
-      if (nameInput) {
-        return true;
-      } else {
-        console.log("Please enter your employee email address!");
-        return false;
-      }
-    },
-  },
-  {
-    type: "input",
-    name: "office",
-    message: "Enter your office number",
-    validate: (nameInput) => {
-      if (nameInput) {
-        return true;
-      } else {
-        console.log("Please enter your office!");
-        return false;
-      }
-    },
-  },
+const { Manager, managerArr } = require("./lib/Manager");
+const { Engineer, engineerArr } = require("./lib/Engineer");
+// const { Intern, internArr } = require(".lib/Intern");
+const employeesArr = []
 
-  //would you like to add an engineer or intern or finish
+const init = () => { managerQuestions() };
 
-  //engineer
-
-  //intern
-];
-
-//finish
-
-
-
-// function that writes html with css and template
-
-function init() {
-  inquirer.prompt(promptTeam).then(function (userInput) {
-    console.log(userInput);
-    writeToFile("./dist/index.html", generateHTML(userInput));
+//manager q's
+const managerQuestions = () => {
+  inquirer.prompt(managerArr)
+  .then((answers) => {
+   answers = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+    employeesArr.push(answers);
+    return menuPrompt();
   });
-}
+};
 
-// // // Function call to initialize app
+//engineer
+const engineerQuestions = () => {
+  inquirer.prompt(engineerArr)
+  .then((answers) => {
+    answers = new Engineer(answers.name, answers.id, answers.email, answers.github);
+    employeesArr.push(answers);
+    return menuPrompt();
+  });
+};
+
+// //intern
+// const internQuestions = () => {
+//   inquirer.prompt(internArr)
+//   .then((answers) => {
+//    answers = new Intern(answers.name, answers.id, answers.email, answers.school);
+//     employeesArr.push(answers);
+//     return menuPrompt();
+//   });
+// };
+
+// menu of options
+const menuPrompt = () => {
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "employeeType",
+      message: "Which type of employee is being added?",
+      choices: [
+        { name: "Engineer", value: "addEngineer" },
+        // { name: "Intern", value: "addIntern" },
+        { name: "DONE", value: "done" },
+      ],
+    }])
+    .then( answer => {
+        //call questiosn from lib files
+      if (answer.employeeType === 'addEngineer') { engineerQuestions(); };
+      // if (answer.employeeType === 'addIntern') { internQuestions(); };
+      if (answer.employeeType === 'done')  {
+        //user input into data for template
+        let html = template(employeesArr)
+        console.log('Team profile build in progress');
+        // function that writes html template
+        generateHTML(html);
+      }
+    })
+};
+
+
+// Function call to initialize app
 init();

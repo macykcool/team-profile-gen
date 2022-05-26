@@ -1,16 +1,17 @@
-const Manager = require('../lib/Manager');
+const {Manager} = require('../lib/Manager');
 
 test('should allow you to enter a name, id, email and office number', () => {
-    const mgr = new Manager('Macy', 55, 'macykcool@gmail.com', 99);
+    const employee = new Manager('Macy', 55, 'macykcool@gmail.com', 99);
 
-    expect(mgr.name).toBe('Macy');
-    expect(mgr.id).toBe(55);
-    expect(mgr.email).toBe('macykcool@gmail.com');
-    expect(mgr.officeNumber).toBe(99);
-    expect(mgr.getName()).toBe('Macy');
-    expect(mgr.getId()).toBe(55);
-    expect(mgr.getEmail()).toBe('macykcool@gmail.com');
-    expect(mgr.getRole()).toBe('Manager');
+    expect(employee.name).toBe('Macy');
+    expect(employee.id).toBe(55);
+    expect(employee.email).toBe('macykcool@gmail.com');
+    expect(employee.officeNumber).toBe(99);
+    expect(employee.getName()).toBe(employee.name);
+    expect(employee.getId()).toBe(employee.id);
+    expect(employee.getEmail()).toBe(employee.email);
+    expect(employee.getOfficeNumber()).toBe(employee.officeNumber)
+    expect(employee.getRole()).toBe('Manager');
 
 });
 
