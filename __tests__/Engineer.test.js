@@ -1,16 +1,17 @@
+const Employee = require('../lib/Employee');
 const Engineer = require('../lib/Engineer');
 
 test('should allow you to enter a name, id, email and github username', () => {
-    const egr = new Engineer('Macy', 55, 'macykcool@gmail.com', 'macykcool');
+    const employee = new Engineer('Macy', 55, 'macykcool@gmail.com', 'macykcool');
 
-    expect(egr.name).toBe('Macy');
-    expect(egr.id).toBe(55);
-    expect(egr.email).toBe('macykcool@gmail.com');
-    expect(egr.github).toBe('macykcool');
-    expect(egr.getName()).toBe('Macy');
-    expect(egr.getId()).toBe(55);
-    expect(egr.getEmail()).toBe('macykcool@gmail.com');
-    expect(egr.getGithub()).toBe('macykcool');
-    expect(egr.getRole()).toBe('Engineer');
+    expect(employee.name).toBe('Macy');
+    expect(employee.id).toBe(55);
+    expect(employee.email).toBe('macykcool@gmail.com');
+    expect(employee.github).toBe('macykcool');
+    expect(employee.getName()).toBe(employee.name);
+    expect(employee.getId()).toBe(employee.id);
+    expect(employee.getEmail()).toBe(employee.email);
+    expect(employee.getGithub()).toBe(employee.github);
+    expect(employee.getRole()).toBe('Engineer');
 
 });
