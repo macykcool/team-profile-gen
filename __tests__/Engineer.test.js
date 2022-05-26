@@ -1,5 +1,5 @@
-const Employee = require('../lib/Employee');
-const Engineer = require('../lib/Engineer');
+
+const {Engineer} = require('../lib/Engineer');
 
 test('should allow you to enter a name, id, email and github username', () => {
     const employee = new Engineer('Macy', 55, 'macykcool@gmail.com', 'macykcool');

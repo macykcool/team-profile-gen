@@ -1,4 +1,4 @@
-const Manager = require('../lib/Manager');
+const {Manager} = require('../lib/Manager');
 
 test('should allow you to enter a name, id, email and office number', () => {
     const employee = new Manager('Macy', 55, 'macykcool@gmail.com', 99);

@@ -1,16 +1,16 @@
 // html will go here and css maybe from css kit 
 
-const manager
+// const manager
 
 
-const engineer
+// const engineer
 
-const intern 
+// const intern 
 
-const employee
-
-
-const html
+// const employee
 
 
-module.exports = html;
+// const html
+
+
+// module.exports = html;

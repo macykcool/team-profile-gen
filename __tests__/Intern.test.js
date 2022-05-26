@@ -1,4 +1,4 @@
-const Intern = require('../lib/Intern');
+const {Intern} = require('../lib/Intern');
 
 test('should allow you to enter a name, id, email and school', () => {
     const employee = new Intern('Macy', 55, 'macykcool@gmail.com', 'UCD');
