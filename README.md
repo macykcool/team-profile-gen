@@ -32,7 +32,7 @@ I set up the repo, set up the directories, and added the files. I set set up tes
 ## Path to Dist folder
 https://github.com/macykcool/team-profile-gen/tree/main/dist
 
-## Demo Video
+## Demo Video Link
 https://drive.google.com/file/d/1R5sL6MJo1iIQ2ngTUhOBYcia4lwQmTHD/view
 
 ## Demo Preview
