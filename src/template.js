@@ -1,4 +1,4 @@
-// html components will go here and css from materialize
+// html components and css from materialize
 
 //manager card
 const manager = managerData => {
@@ -77,7 +77,7 @@ const employeeCards = employeeArr => {
 }
 
 
-// const html + all cards
+// base html + all cards
 const template = data => {
     return `
     <html lang="en">

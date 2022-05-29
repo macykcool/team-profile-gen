@@ -14,3 +14,5 @@ const writeFile = fileContent => {
 
 
   module.exports = writeFile;
+
+  //this file generates and lands file in the dist folder
