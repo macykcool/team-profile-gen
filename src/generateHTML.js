@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const generateHTML = fileContent => {
-        fs.generateHTML('./dist/index.html', fileContent, err => {
+const writeFile = fileContent => {
+        fs.writeFile('./dist/index.html', fileContent, err => {
             if (err) {
                 console.log(err);
             } else {
@@ -12,7 +12,5 @@ const generateHTML = fileContent => {
   };
 
 
-//   // potentially add css here const copy file 
 
-
-  module.exports = generateHTML;
+  module.exports = writeFile;
