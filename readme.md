@@ -19,12 +19,12 @@ Generate a webpage that displays my team's basic info to have quick access to th
 
 
 ## Description
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
+AS A manager,
+I WANT to generate a webpage that displays my team's basic info,
+SO THAT I have quick access to their emails and GitHub profiles.
 
 ## Installation Instructions  
-Go to the github repo provided below and download the code. Make sure to npm install before running node. When you run node index in the terminal, you will be the Manager and filling out info for yourself and adding employees to the team. when the prompt is done, an index.html will be generated in the dist folder.
+Go to the github repo provided below and download the code. Make sure to run 'npm install' before running node. When you run 'node index' in the terminal, you will be the Manager and filling out info for yourself then presented with a menu where you select employee types to add to the team profile. When you select done, an index.html will be generated in the dist folder.
 
 ## Process
 I set up the repo, set up the directories, and added the files. I set set up tests for each class, then set up the actual classes in the lib folder. The actual classes utilize super and extends to build off the main employee class. Once all the tests passed, I got started on the generateHTML file that generates the index.html and lands in the dist folder. Lastly I worked on the template file houses the base html and for loop that adds the employee cards from the prompt data. Once the cards were working, I styeled using materialize css kit. 
@@ -40,12 +40,12 @@ I set up the repo, set up the directories, and added the files. I set set up tes
 https://github.com/macykcool/readme-gen
 
 ## Built With
-- Materialize for css
+- Materialize for CSS
 - Javascript
 - HTML
 - NPM
 - Jest
-- Inquiere
+- Inquierer
 - File System
 - Screencastify
 
