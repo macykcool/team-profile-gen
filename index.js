@@ -1,15 +1,15 @@
 const inquirer = require("inquirer");
-const generateHTML = require("./src/generateHTML");
+const writeFile = require("./src/generateHTML");
 const template = require("./src/template");
 
 const { Manager, managerArr } = require("./lib/Manager");
 const { Engineer, engineerArr } = require("./lib/Engineer");
-const { Intern, internArr } = require(".lib/Intern");
+const { Intern, internArr } = require("./lib/Intern.js");
 
 const employeesArr = [];
 
 const init = () => {
-  managerQuestions();
+  managerQuestions()
 };
 
 //manager q's
@@ -79,10 +79,9 @@ const menuPrompt = () => {
       }
       if (answer.employeeType === "done") {
         //user input into data for template
-        let html = template(employeesArr);
-        console.log("Team profile build in progress");
+        let HTML = template(employeesArr);
         // function that writes html template
-        generateHTML(html);
+        writeFile(HTML);
       }
     });
 };
