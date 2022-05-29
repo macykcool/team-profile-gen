@@ -12,7 +12,5 @@ const writeFile = fileContent => {
   };
 
 
-//   // potentially add css here const copy file 
-
 
   module.exports = writeFile;
