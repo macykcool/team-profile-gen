@@ -33,9 +33,10 @@ I set up the repo, set up the directories, and added the files. I set set up tes
 https://github.com/macykcool/team-profile-gen/tree/main/dist
 
 ## Demo Video
+https://drive.google.com/file/d/1R5sL6MJo1iIQ2ngTUhOBYcia4lwQmTHD/view
 
 ## Demo Preview
-
+![team_profile generator demo](./gif/profiledemo.gif)
 
 ## Github Repository
 https://github.com/macykcool/team-profile-gen
