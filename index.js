@@ -9,7 +9,7 @@ const { Intern, internArr } = require(".lib/Intern");
 const employeesArr = [];
 
 const init = () => {
-  managerQuestions();
+  managerQuestions()
 };
 
 //manager q's
