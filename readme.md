@@ -10,7 +10,7 @@ Generate a webpage that displays my team's basic info to have quick access to th
 - [Description](#description) 
 - [Installation Instructions](#installation-instructions)
 - [Process](#process)
-- [Path to Dist folder for readme](#path-to-dist-folder-for-index.html)
+- [Path to Dist folder for readme](#path-to-dist-folder)
 - [Demo Video Link](#demo-video-link)
 - [Demo Preview](#demo-preview)
 - [Github Repository](#github-repository)
@@ -29,8 +29,8 @@ Go to the github repo provided below and download the code. Make sure to run 'np
 ## Process
 I set up the repo, set up the directories, and added the files. I set set up tests for each class, then set up the actual classes in the lib folder. The actual classes utilize super and extends to build off the main employee class. Once all the tests passed, I got started on the generateHTML file that generates the index.html and lands in the dist folder. Lastly I worked on the template file houses the base html and for loop that adds the employee cards from the prompt data. Once the cards were working, I styeled using materialize css kit. 
 
-## Path to Dist folder for index.html
-- https://github.com/macykcool/team-profile-gen/tree/main/dist
+## Path to Dist folder
+https://github.com/macykcool/team-profile-gen/tree/main/dist
 
 ## Demo Video
 
@@ -38,7 +38,7 @@ I set up the repo, set up the directories, and added the files. I set set up tes
 
 
 ## Github Repository
-- https://github.com/macykcool/team-profile-gen
+https://github.com/macykcool/team-profile-gen
 
 ## Built With
 - Materialize for CSS
@@ -55,4 +55,4 @@ I set up the repo, set up the directories, and added the files. I set set up tes
 - https://opensource.org/licenses/MPL-2.0
 
 ## Made with ❤️️ by Macy Mannix
-- Mentored by UC Davis Full Stack Web Developer Bootcamp
+Mentored by UC Davis Full Stack Web Developer Bootcamp
