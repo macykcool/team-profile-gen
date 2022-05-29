@@ -10,7 +10,7 @@ Generate a webpage that displays my team's basic info to have quick access to th
 - [Description](#description) 
 - [Installation Instructions](#installation-instructions)
 - [Process](#process)
-- [Path to Dist folder for readme](#path-to-dist-folder)
+- [Path to Dist folder](#path-to-dist-folder)
 - [Demo Video Link](#demo-video-link)
 - [Demo Preview](#demo-preview)
 - [Github Repository](#github-repository)
@@ -36,7 +36,7 @@ https://github.com/macykcool/team-profile-gen/tree/main/dist
 https://drive.google.com/file/d/1R5sL6MJo1iIQ2ngTUhOBYcia4lwQmTHD/view
 
 ## Demo Preview
-![team_profile generator demo](./gif/profiledemo.gif)
+![team profile generator demo](./gif/profiledemo.gif)
 
 ## Github Repository
 https://github.com/macykcool/team-profile-gen
