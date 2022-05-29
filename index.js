@@ -80,7 +80,6 @@ const menuPrompt = () => {
       if (answer.employeeType === "done") {
         //user input into data for template
         let HTML = template(employeesArr);
-        console.log("Team profile build in progress");
         // function that writes html template
         writeFile(HTML);
       }
